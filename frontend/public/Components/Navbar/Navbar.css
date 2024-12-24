@@ -1,7 +1,56 @@
-.navbar {
-    color: blue; 
-    /* example testing */
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Carrois+Gothic&family=Limelight&family=Parkinsans:wght@300..800&display=swap');
+.navbar{
+  font-family: "Alatsi", serif;
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
 }
+.navbar_container{
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid;
 
+}
+.logo_with_name{
+    display: flex;
+    align-items: center;
+}
+.logo_with_name img{
+    height: 60px;
+    width: 80px;
+}
+.navbar_right img{
+    height: 50px;
+    width: 50px;
+}
+.navbar_options {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.navbar_options ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+.navbar_options li {
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+}
+.navbar_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 /* define all the classnames dividing with '-' example 'navbar-container-logo' */
 /* and also dont include capitals in those names */
+
+/* naku telusu ra fuka */
