@@ -1,19 +1,18 @@
-import React from 'react'
-import './Hero.css'
+import React from "react";
+import "./Hero.css";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Hero = () => {
   return (
-    <div className="home" color='red'>
-      <div className="hero">
-        <div className="hero-container">
-          <div className="hero_image">
-            <img src="assets\hero.png" alt="" />
-            <h1 className='hero-heading'>Explore Our Site for Hassle-Free Billing and Comprehensive Accounting Services</h1>
-          </div>
-        </div>
-      </div>
+    <div className="hero">
+        <p className="hero-heading">
+          Explore Our Site for Hassle-Free Billing and Comprehensive Accounting
+          Services
+        </p>
+        <button className="explore-button">Explore More <FontAwesomeIcon icon={faArrowRight} /></button>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

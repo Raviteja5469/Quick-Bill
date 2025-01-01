@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(211, 205, 185, 0.674);
+  background-image: linear-gradient(to bottom, #fcb69f 0%, #ffecd2 100%);
   padding: 0 20px;
 }
 
@@ -59,8 +59,8 @@ hr {
     margin-bottom: 10px;
 }
 
-.navbar-right img{
-    height: 50px;
+.navbar-right .profile{
+    height: 33px;
     cursor: pointer;
 }
 
@@ -73,6 +73,11 @@ hr {
     font-weight: 400;
     font-size: larger;
     cursor: pointer;
+    background-image: linear-gradient(to top, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+.login-button:hover {
+    background-image: linear-gradient(to bottom, #f99185 0%, #cf556c 0%, #ff867a 21%, #ff8c7f 52%, #ff8177 78%, #b12a5b 100%);
 }
 
 /* define all the classnames dividing with '-' example 'navbar-container-logo' */
