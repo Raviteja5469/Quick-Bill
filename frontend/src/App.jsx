@@ -1,6 +1,6 @@
-import Footer from '../public/Components/Footer/Footer'
-import Hero from '../public/Components/Hero/Hero'
-import Navbar from '../public/Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
+import Hero from './Components/Hero/Hero'
+import Navbar from './Components/Navbar/Navbar'
 import './App.css'
 
 function App() {

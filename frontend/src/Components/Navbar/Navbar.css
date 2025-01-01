@@ -3,54 +3,80 @@
   font-family: "Alatsi", serif;
   font-weight: 400;
   font-style: normal;
-  border: 2px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  background-color: rgba(211, 205, 185, 0.674);
+  padding: 0 20px;
 }
-.navbar_container{
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid;
 
-}
-.logo_with_name{
+
+.logo-with-name{
     display: flex;
     align-items: center;
 }
-.logo_with_name img{
-    height: 60px;
-    width: 80px;
+
+.logo-with-name img{
+    height: 65px;
 }
-.navbar_right img{
-    height: 50px;
-    width: 50px;
+
+.logo-name {
+    font-size: 35px;
 }
-.navbar_options {
+
+.navbar-options {
     display: flex;
     list-style: none;
     gap: 25px;
     transition: all 0.3s ease-in-out;
 }
-.navbar_options ul {
+
+.navbar-options ul {
     display: flex;
     list-style: none;
     gap: 50px;
     margin: 0;
     padding: 0;
 }
-.navbar_options li {
+
+.navbar-options li {
     cursor: pointer;
     position: relative;
     font-size: 20px;
 }
-.navbar_right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+
+hr {
+    margin: 0;
+    border: none;
+    height: 3px;
+    background-color: black;
 }
+
+.navbar-right {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.navbar-right img{
+    height: 50px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #4CAF50;
+    all: unset;
+    border: 2px solid;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: larger;
+    cursor: pointer;
+}
+
 /* define all the classnames dividing with '-' example 'navbar-container-logo' */
 /* and also dont include capitals in those names */
 
 /* naku telusu ra fuka */
+/* telsu ani malli '_' eh pettinav em ra fuka */
