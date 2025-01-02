@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Carrois+Gothic&family=Limelight&family=Parkinsans:wght@300..800&display=swap');
+.feature-list {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-heading {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Alatsi", serif;
+}
+
+.feature-list-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 60px 45px;
+}
+
+.feature-box {
+    width: 310px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: contain;
+    border-radius: 21px 42px 63px 10.5px;
+}
+
+.feature-box {
+    /*these styles should be given to individual boxes  */
+    background-image: url(../../assets/invoice_image.jpg);
+}
+
+.feature-box .feature-button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 50%; 
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Alatsi', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.feature-button:hover {
+    background-color: rgb(250, 249, 233);
+}

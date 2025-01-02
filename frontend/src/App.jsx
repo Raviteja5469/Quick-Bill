@@ -3,6 +3,7 @@ import Hero from './Components/Hero/Hero'
 import Navbar from './Components/Navbar/Navbar'
 import './App.css'
 import FAQs from './Components/FAQs/FAQs'
+import FeatureList from './Components/FeatureList/FeatureList'
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     <>
     <Navbar/>
     <Hero/>
-      {/* hey this is the home page */}\
+      <FeatureList/>
       <FAQs/>
       <Footer/>
 
