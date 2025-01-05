@@ -5,7 +5,7 @@ import logo from "/src/assets/logo.png";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faUser} from '@fortawesome/free-regular-svg-icons';
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("home");
 
   return (
@@ -56,8 +56,7 @@ const Navbar = () => {
       <div className="navbar-right">
         <button
           className="login-button"
-          onClick={() => {
-            console.log("login clicked");
+          onClick={() => {setShowLogin(true);
           }}
         >
           Login
