@@ -9,7 +9,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    clip-path: ellipse(110% 85vh at 50% top); 
+    clip-path: ellipse(110% 80vh at 50% bottom); 
 }
 
 
