@@ -5,6 +5,7 @@ import { faMultiply } from '@fortawesome/free-solid-svg-icons'
 
 const LoginSignup = () => {
   const [CurrentState,SetCurrState]= useState("login")
+  
   return (
     <div>
       <div className='Login-Popup'>
