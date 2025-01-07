@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar/Navbar'
 import './App.css'
 import FAQs from './Components/FAQs/FAQs'
 import FeatureList from './Components/FeatureList/FeatureList'
-import LoginSignup from './Pages/LoginSignup/LoginSignup';
+import LoginSignup from './Pages/LoginSignup';
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);

@@ -1,9 +1,10 @@
 .footer {
     background-image: linear-gradient(to top, #ffecd2 0%, #fcb69f 100%);
-    padding: 40px 8vw;
+    height: 40vh;
+    padding: 20px 8vw;
     padding-top: 80px;
     text-align: center;
-    clip-path: ellipse(110% 85vh at 50% top); 
+    clip-path: ellipse(110% 50vh at 50% bottom); 
 }
 
 .footer-content {
@@ -39,11 +40,10 @@
     font-size: 55px;
 }
 
-.footer-content_left p {
+.footer-content .footer-left p {
     margin-top: 20px;
     line-height: 1.5;
     font-size: 14px;
-    max-width: 300px;
 }
 
 .footer-social-icons {
@@ -88,7 +88,7 @@
 .hr-footer{
     border: none;
     border-top: 1px solid #444;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .footer-copyright {

@@ -9,9 +9,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    clip-path: ellipse(110% 80vh at 50% bottom); 
+    clip-path: ellipse(120% 80vh at 50% top); 
 }
-
 
 
 .hero-heading {

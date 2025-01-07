@@ -2,10 +2,10 @@ import React from "react";
 import { useState } from "react";
 import "./Navbar.css";
 import logo from "/src/assets/logo.png";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faUser} from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = ({setShowLogin}) => {
+const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
 
   return (
@@ -56,12 +56,13 @@ const Navbar = ({setShowLogin}) => {
       <div className="navbar-right">
         <button
           className="login-button"
-          onClick={() => {setShowLogin(true);
+          onClick={() => {
+            setShowLogin(true);
           }}
         >
           Login
         </button>
-        <FontAwesomeIcon className="profile" icon={faUser} />
+        <FontAwesomeIcon className="profile" icon={faCircleUser} />
       </div>
     </div>
   );

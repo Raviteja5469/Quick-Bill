@@ -3,15 +3,13 @@
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: #00000090;
     display: grid;
+    backdrop-filter: blur(5px);
 }
 .Login-Popup-Container{
     place-self: center;
     width: max(23vw,330px);
-    color: #f3f3f3;
-    background-color: rgb(207, 168, 136);
-    display: flex;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);    display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 25px 30px;
@@ -36,7 +34,6 @@
 }
 .Login-Popup-inputs input{  
     outline: none;
-    border: 1px solid #c9c9c9;
     padding: 10px;
     border-radius: 4px;
 }
@@ -45,7 +42,6 @@
     padding: 10px;
     border-radius: 4px;
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
     font-size: 15px;
     cursor: pointer;
     font-weight: bolder;
@@ -55,18 +51,19 @@
 }
 .Login-Popup-Container button:hover{
     background-color: rgb(0, 0, 0);
-    border: 1px solid white;
-    color: white;
 }
+
 .Login-Popup-Condition{
     display: flex;
     align-items: start;
     gap: 8px;
     margin-top: -15px ;
 }
+
 .signin_color span:hover{
     color: black;
 }
+
 .signin_color span{
     text-decoration: underline;
 }
