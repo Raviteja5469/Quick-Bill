@@ -10,30 +10,35 @@ import Finance from "./Pages/Finance";
 import Customers from "./Pages/Customers";
 import Sales from "./Pages/Sales";
 import Reports from "./Pages/Reports";
+import Pricing from "./Pages/Pricing";
 import ProtectedRoute from "./Components/Jsfiles/ProtectedRoute";
 
 function App() {
-  
-  // for now keep it like this later i will add routing
-
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<LoginSignup />} />
-          <Route path="/feature" element= {
-            <ProtectedRoute>
-              <FeaturePage />
-            </ProtectedRoute>
-          } />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="billing" element={<Billing />} />
-          <Route path="reports" element={<Reports />} />
-          <Route path="sales" element={<Sales />} />
-          <Route path="customers" element={<Customers />} />
-          <Route path="finance" element={<Finance />} />
-          <Route path="inventory" element={<Inventory />} />
+
+          <Route
+            path="/feature"
+            element={
+              <ProtectedRoute>
+                <FeaturePage />
+              </ProtectedRoute>
+            }
+          >
+            {/* Nested routes */}
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="billing" element={<Billing />} />
+            <Route path="inventory" element={<Inventory />} />
+            <Route path="customers" element={<Customers />} />
+            <Route path="sales" element={<Sales />} />
+            <Route path="finance" element={<Finance />} />
+            <Route path="reports" element={<Reports />} />
+          </Route>
+
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </BrowserRouter>
     </>

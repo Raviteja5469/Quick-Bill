@@ -1,8 +1,9 @@
 import React from 'react'
+import './CSS/Billing.css'
 
 const Billing = () => {
   return (
-    <div>
+    <div className='billing-container'>
       this is billing
     </div>
   )

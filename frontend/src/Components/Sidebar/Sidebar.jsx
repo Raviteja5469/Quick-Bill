@@ -1,6 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
 import { faChartBar, faCircleUser } from "@fortawesome/free-regular-svg-icons";
 import { faFileInvoiceDollar, faGaugeSimpleHigh, faHome, faMoneyBills, faMoneyBillTrendUp, faUserGroup, faWarehouse } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,38 +16,38 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="sidebar-features">
-        <div className="feature">
+        <Link to='/' className="feature">
           <FontAwesomeIcon icon={faHome}/>
           <p>Home</p>
-        </div>
-        <div className="feature">
+        </Link>
+        <Link to='/feature/dashboard' className="feature">
           <FontAwesomeIcon icon={faGaugeSimpleHigh}/>
           <p>Dashboard</p>
-        </div>
-        <div className="feature">
+        </Link>
+        <Link to='/feature/billing' className="feature">
           <FontAwesomeIcon icon={faFileInvoiceDollar}/>
           <p>Billing</p>
-        </div>
-        <div className="feature">
+        </Link>
+        <Link to='/feature/inventory' className="feature">
           <FontAwesomeIcon icon={faWarehouse}/>
           <p>Inventory</p>
-        </div>
-        <div className="feature">
+        </Link>
+        <Link to='/feature/finance' className="feature">
           <FontAwesomeIcon icon={faMoneyBills}/>
           <p>Finance</p>
-        </div>
-        <div className="feature">
+        </Link>
+        <Link to='/feature/sales' className="feature">
           <FontAwesomeIcon icon={faMoneyBillTrendUp}/>
           <p>Sales</p>
-        </div>
-        <div className="feature">
+        </Link>
+        <Link to='/feature/customers' className="feature">
           <FontAwesomeIcon icon={faUserGroup}/>
           <p>Customers</p>
-        </div>
-        <div className="feature">
+        </Link>
+        <Link to='/feature/reports' className="feature">
           <FontAwesomeIcon icon={faChartBar}/>
           <p>Reports</p>
-        </div>
+        </Link>
       </div>
     </div>
   )

@@ -4,6 +4,7 @@ import "./Navbar.css";
 import logo from "/src/assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
@@ -16,41 +17,15 @@ const Navbar = ({ setShowLogin }) => {
       </div>
       <div className="navbar-options">
         <ul>
-          <li
-            onClick={() => {
-              setMenu("home");
-            }}
-          >
-            Home {menu === "home" ? <hr /> : <></>}
-          </li>
-          <li
-            onClick={() => {
-              setMenu("features");
-            }}
-          >
-            Features {menu === "features" ? <hr /> : <></>}
-          </li>
-          <li
-            onClick={() => {
-              setMenu("about");
-            }}
-          >
-            About {menu === "about" ? <hr /> : <></>}
-          </li>
-          <li
-            onClick={() => {
-              setMenu("pricing");
-            }}
-          >
-            Pricing {menu === "pricing" ? <hr /> : <></>}
-          </li>
-          <li
-            onClick={() => {
-              setMenu("faq");
-            }}
-          >
-            FAQ's {menu === "faq" ? <hr /> : <></>}{" "}
-          </li>
+          <li onClick={() => {setMenu("home");}}><Link to='/' style={{textDecoration:'none', color:'black'}}> Home </Link> {menu === "home" ? <hr /> : <></>}</li>
+
+          <li onClick={() => {setMenu("features");}}><Link to='/feature/dashboard' style={{textDecoration:'none', color:'black'}}> Features</Link> {menu === "features" ? <hr /> : <></>}</li>
+
+          <li onClick={() => {setMenu("about");}}><Link to='/' style={{textDecoration:'none', color:'black'}}> About </Link>{menu === "about" ? <hr /> : <></>}</li>
+
+          <li onClick={() => {setMenu("pricing");}}><Link to='/pricing' style={{textDecoration:'none', color:'black'}}>  Pricing </Link>{menu === "pricing" ? <hr /> : <></>}</li>
+
+          <li onClick={() => {setMenu("faq");}}><Link to='/' style={{textDecoration:'none', color:'black'}}> FAQ's </Link>{menu === "faq" ? <hr /> : <></>}</li>
         </ul>
       </div>
       <div className="navbar-right">
@@ -60,7 +35,7 @@ const Navbar = ({ setShowLogin }) => {
             setShowLogin(true);
           }}
         >
-          Login
+           Login 
         </button>
         <FontAwesomeIcon className="profile" icon={faCircleUser} />
       </div>

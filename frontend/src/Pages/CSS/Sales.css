@@ -2,6 +2,9 @@
     border: 2px solid black;
     background-color: aliceblue;
     width: 80vw;
-    height: 100vh;
     box-sizing: border-box;
+    border-radius: 20px;
+    margin: 5px 0;
+    height: 140vh; 
+    /* height is just for knowing how it showing purpose */
 }

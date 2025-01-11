@@ -1,8 +1,9 @@
 import React from 'react'
+import './CSS/Inventory.css'
 
 const Inventory = () => {
   return (
-    <div>
+    <div className='inventory-container'>
       this is inventory
     </div>
   )
