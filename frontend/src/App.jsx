@@ -12,6 +12,7 @@ import Sales from "./Pages/Sales";
 import Reports from "./Pages/Reports";
 import Pricing from "./Pages/Pricing";
 import ProtectedRoute from "./Components/Jsfiles/ProtectedRoute";
+import FAQs from "./Components/FAQs/FAQs";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           </Route>
 
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/Faqs" element={<FAQs/>} />
         </Routes>
       </BrowserRouter>
     </>

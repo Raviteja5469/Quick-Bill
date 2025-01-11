@@ -4,7 +4,7 @@ import "./Navbar.css";
 import logo from "/src/assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
@@ -25,7 +25,7 @@ const Navbar = ({ setShowLogin }) => {
 
           <li onClick={() => {setMenu("pricing");}}><Link to='/pricing' style={{textDecoration:'none', color:'black'}}>  Pricing </Link>{menu === "pricing" ? <hr /> : <></>}</li>
 
-          <li onClick={() => {setMenu("faq");}}><Link to='/' style={{textDecoration:'none', color:'black'}}> FAQ's </Link>{menu === "faq" ? <hr /> : <></>}</li>
+          <li onClick={() => {setMenu("faq");}}><Link to='/faqs' style={{textDecoration:'none', color:'black'}}> FAQ's </Link>{menu === "faq" ? <hr /> : <></>}</li>
         </ul>
       </div>
       <div className="navbar-right">

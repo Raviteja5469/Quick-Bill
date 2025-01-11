@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react'
 import './FAQs.css'
+// import { Link } from 'react-router-dom';
 
 const faqData = [
     {
