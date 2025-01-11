@@ -11,7 +11,7 @@ const FeaturePage = () => {
         </div>
         <div className='feature-container'>
             outlet is here
-            <Outlet/>
+            <Outlet />
         </div>
     </div>
   )

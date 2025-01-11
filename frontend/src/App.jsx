@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginSignup />} />
-          <Route path="/feature/*" element= {
+          <Route path="/feature" element= {
             <ProtectedRoute>
               <FeaturePage />
             </ProtectedRoute>
