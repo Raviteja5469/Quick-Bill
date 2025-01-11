@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./Navbar.css";
 import logo from "/src/assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");

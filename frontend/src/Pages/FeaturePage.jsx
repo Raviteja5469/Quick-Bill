@@ -1,6 +1,20 @@
-// this page is shown after the user logins. 
-// in this page there is side bar and every feature shows on the side bar
-// but that doesnt mean the home page is removed. 
-// after login this page is routed to use the features
+import React from 'react'
+import Sidebar from '../Components/Sidebar/Sidebar'
+import { Outlet } from 'react-router-dom'
+import './CSS/FeaturePage.css'
 
-// also dashboard as default
+const FeaturePage = () => {
+  return (
+    <div className='featurepage'>
+        <div className="sidebar-container">
+            <Sidebar />
+        </div>
+        <div className='feature-container'>
+            outlet is here
+            <Outlet/>
+        </div>
+    </div>
+  )
+}
+
+export default FeaturePage
