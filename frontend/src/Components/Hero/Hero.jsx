@@ -53,7 +53,7 @@ const Hero = () => {
         </h2>
       </div>
 
-      {/* Images and Button */}
+      {/* Images and Button etc */}
       <div className="hero-images">
         <img
           ref={leftImgRef}

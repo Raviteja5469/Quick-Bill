@@ -108,15 +108,6 @@
   }
   
   .explore-button:hover {
-    /* background-image: linear-gradient(
-      to bottom,
-      #f99185 0%,
-      #cf556c 0%,
-      #ff867a 21%,
-      #ff8c7f 52%,
-      #ff8177 78%,
-      #b12a5b 100%
-    ); */
     background-color: white;
     color: black;
   }

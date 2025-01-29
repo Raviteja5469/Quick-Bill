@@ -81,6 +81,9 @@ hr {
     background-image: linear-gradient(to bottom, #f99185 0%, #cf556c 0%, #ff867a 21%, #ff8c7f 52%, #ff8177 78%, #b12a5b 100%);
 }
 
+
+/* responsiveness should be added */
+
 /* define all the classnames dividing with '-' example 'navbar-container-logo' */
 /* and also dont include capitals in those names */
 
