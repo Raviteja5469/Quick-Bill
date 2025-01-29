@@ -14,8 +14,8 @@ const Hero = () => {
 
       // Move left image left, right image right
       if (leftImgRef.current && rightImgRef.current) {
-        leftImgRef.current.style.transform = `translateX(-${scrollPos * 0.4}px)`;
-        rightImgRef.current.style.transform = `translateX(${scrollPos * 0.4}px)`;
+        leftImgRef.current.style.transform = `translateX(-${scrollPos * 0.5}px)`;
+        rightImgRef.current.style.transform = `translateX(${scrollPos * 0.5}px)`;
       }
 
       // Add or remove 'popped' class based on scroll threshold
