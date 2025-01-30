@@ -1,5 +1,7 @@
 .footer {
-    background-image: linear-gradient(to top, #ffecd2 0%, #fcb69f 100%);
+    /* background-image: linear-gradient(to top, #ffecd2 0%, #fcb69f 100%); */
+    color: white;
+    background-color: black;
     height: 40vh;
     padding: 20px 8vw;
     padding-top: 80px;
@@ -94,6 +96,8 @@
 }
 
 .footer-copyright {
+    color: black;
+    background-color: white;
     font-size: 12px;
 }
 
