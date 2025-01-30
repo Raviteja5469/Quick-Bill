@@ -41,9 +41,8 @@ const Footer = () => {
         </div>
       </div>
       <hr className='hr-footer' />
-      <p className="footer-copyright">
-        Copyright 2024 @QUICKBILL.com-All Right Reserverd.
-      </p>
+      <div className="footer-copyright">
+        Copyright 2024 @QUICKBILL.com-All Right Reserverd.</div>
     </div>
   )
 }

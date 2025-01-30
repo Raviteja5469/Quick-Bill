@@ -96,7 +96,9 @@
 }
 
 .footer-copyright {
+    width: 100%;
     color: black;
+    /* background-color: black; */
     background-color: white;
     font-size: 12px;
 }
