@@ -103,7 +103,7 @@
     font-size: 12px;
 }
 
-/* Responsive adjustments
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .footer_content {
         grid-template-columns: 1fr;
@@ -133,4 +133,4 @@
     .footer_content_right h2 {
         font-size: 14px;
     }
-} */
+}
