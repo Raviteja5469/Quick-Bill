@@ -1,68 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Carrois+Gothic&family=Limelight&family=Parkinsans:wght@300..800&display=swap');
-.feature-list {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Global styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
-.feature-heading {
-    font-size: 40px;
-    text-align: center;
-    font-family: "Alatsi", serif;
+/* Container for the feature list */
+.max-w-screen {
+  width: 80%; /* Set the width to 80% */
+  margin: auto; /* Center the content */
 }
 
-.feature-list-cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    gap: 50px;
-}
-
-.feature-box {
-    width: 310px;
-    height: 320px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-size: contain;
-    border-radius: 21px 42px 63px 10.5px;
-}
-
-.feature-box:hover {
-    transform: scale(1.03);
-    transition: 0.4s;
-}
-
-.feature-box {
-    /*these styles should be given to individual boxes  */
-    background-image: url(../../assets/invoice_image.jpg);
+/* Responsive style for the headings */
+h2 {
+  font-size: 2.5rem;
+  color: #000000;
 }
 
 
-.feature-box .feature-button {
-    all: unset;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    width: 50%; 
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    backdrop-filter: blur(5px);
-    font-size: 25px;
-    font-weight: 700;
-    font-family: 'Alatsi', cursive;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Text styling */
+.text-gray-600 {
+  color: #3d3d3d;
+  font-size: 1.2rem;
+
 }
 
+p {
+  line-height: 1.6;
+}
 
-.feature-button:hover {
-    background-color: rgb(250, 249, 233);
+/* Flexbox styling for feature sections */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Padding for sections */
+.p-6 {
+  padding: 1.5rem;
+}
+.my-4{
+  color: #000000;
+}
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .md\:w-1\/2 {
+    width: 80%;
+  }
+
+  .p-4 {
+    padding: 1rem;
+  }
+}
+
+/* Image styling */
+.w-40 {
+  width: 10rem; /* 160px */
+}
+
+.w-40:hover {
+  border: 5px solid;
+}
+
+.h-40 {
+  height: 10rem; /* 160px */
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.shadow-lg {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .w-40,
+  .h-40 {
+    width: 8rem; /* 128px */
+    height: 8rem; /* 128px */
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }
